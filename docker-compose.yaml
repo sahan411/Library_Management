@@ -12,20 +12,20 @@ services:
     networks:
       - devops-network
     environment:
-      REACT_APP_API_BASE_URL: http://backend:5000
+      REACT_APP_API_BASE_URL: http://localhost:5000
 
   backend:
     build:
       context: ./server
       dockerfile: dockerfile
     ports:
-      - "8000:8000" 
+      - "5000:5000" 
     depends_on:
       - mongo
     networks:
       - devops-network
     environment:
-      MONGO: mongodb://mongo:27017/lbms-db
+      MONGO_URI: mongodb://mongo:27017/lbms-db
 
   mongo:
     image: mongo:5.0
