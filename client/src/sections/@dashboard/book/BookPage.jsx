@@ -34,6 +34,7 @@ const StyledBookImage = styled("img")({
   height: "100%",
   objectFit: "cover",
   position: "absolute",
+
 });
 
 const BookPage = () => {
@@ -175,7 +176,7 @@ const BookPage = () => {
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
           <Typography variant="h3" sx={{ mb: 5 }}>
-            Books
+            Book
           </Typography>
           {user.isAdmin && (
             <Button
@@ -186,7 +187,7 @@ const BookPage = () => {
               }}
               startIcon={<Iconify icon="eva:plus-fill" />}
             >
-              New Book
+              New Books
             </Button>
           )}
         </Stack>
