@@ -176,7 +176,7 @@ const BookPage = () => {
       <Container>
         <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
           <Typography variant="h3" sx={{ mb: 5 }}>
-            Book
+            Books
           </Typography>
           {user.isAdmin && (
             <Button
@@ -187,7 +187,7 @@ const BookPage = () => {
               }}
               startIcon={<Iconify icon="eva:plus-fill" />}
             >
-              New Books
+              New Book
             </Button>
           )}
         </Stack>
