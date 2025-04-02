@@ -187,7 +187,7 @@ const BookPage = () => {
               }}
               startIcon={<Iconify icon="eva:plus-fill" />}
             >
-              New Book
+              Add new Books
             </Button>
           )}
         </Stack>
